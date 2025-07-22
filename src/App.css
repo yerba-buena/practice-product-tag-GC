@@ -1,0 +1,144 @@
+body {
+  background: #f7f8fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 380px;
+  margin: 48px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #313a46;
+}
+
+.product-tag {
+  background: linear-gradient(135deg, #e3e9f0 0%, #f7f8fa 100%);
+  border: 1.5px solid #ccd6e2;
+  border-radius: 14px;
+  padding: 32px 16px 20px 16px;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.tag-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  color: #1a2233;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: #3d7c3a;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.barcode-value {
+  font-size: 0.95rem;
+  letter-spacing: 0.13em;
+  margin-top: 8px;
+  color: #7b8491;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: #5c7cfa;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.98rem;
+  transition: background 0.2s;
+}
+.edit-btn:hover {
+  background: #3b5bdb;
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(25, 33, 46, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-form {
+  background: #fff;
+  padding: 28px 22px 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 18px rgba(0,0,0,0.10);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 270px;
+}
+.edit-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #555;
+  gap: 4px;
+}
+.edit-form input[type="text"],
+.edit-form input[type="number"] {
+  padding: 6px 8px;
+  border: 1px solid #ccd6e2;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.edit-form button[type="submit"] {
+  background: #3d7c3a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 17px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.edit-form button[type="button"] {
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.edit-form button[type="submit"]:hover {
+  background: #2d5c29;
+}
+.edit-form button[type="button"]:hover {
+  background: #ddd;
+}
